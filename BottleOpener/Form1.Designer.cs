@@ -56,6 +56,22 @@
             this.controlPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.createGodModeFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accessibilityOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewHardwareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addRemoveProgramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateTimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontsFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.internetPropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.joystickPropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modemPropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mousePropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multimediaPropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printersFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.regionalSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scannersAndCamerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soundPropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.systemPropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -277,6 +293,23 @@
             // 
             // controlPanelToolStripMenuItem
             // 
+            this.controlPanelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accessibilityOptionsToolStripMenuItem,
+            this.addNewHardwareToolStripMenuItem,
+            this.addRemoveProgramsToolStripMenuItem,
+            this.dateTimeToolStripMenuItem,
+            this.pToolStripMenuItem,
+            this.fontsFolderToolStripMenuItem,
+            this.internetPropertiesToolStripMenuItem,
+            this.joystickPropertiesToolStripMenuItem,
+            this.modemPropertiesToolStripMenuItem,
+            this.mousePropertiesToolStripMenuItem,
+            this.multimediaPropertiesToolStripMenuItem,
+            this.printersFolderToolStripMenuItem,
+            this.regionalSettingsToolStripMenuItem,
+            this.scannersAndCamerasToolStripMenuItem,
+            this.soundPropertiesToolStripMenuItem,
+            this.systemPropertiesToolStripMenuItem});
             this.controlPanelToolStripMenuItem.Name = "controlPanelToolStripMenuItem";
             this.controlPanelToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.controlPanelToolStripMenuItem.Text = "Control Panel";
@@ -298,6 +331,118 @@
             this.createGodModeFolderToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.createGodModeFolderToolStripMenuItem.Text = "GodMode Folder";
             this.createGodModeFolderToolStripMenuItem.Click += new System.EventHandler(this.createGodModeFolderToolStripMenuItem_Click);
+            // 
+            // accessibilityOptionsToolStripMenuItem
+            // 
+            this.accessibilityOptionsToolStripMenuItem.Name = "accessibilityOptionsToolStripMenuItem";
+            this.accessibilityOptionsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.accessibilityOptionsToolStripMenuItem.Text = "Accessibility Options";
+            this.accessibilityOptionsToolStripMenuItem.Click += new System.EventHandler(this.accessibilityOptionsToolStripMenuItem_Click);
+            // 
+            // addNewHardwareToolStripMenuItem
+            // 
+            this.addNewHardwareToolStripMenuItem.Name = "addNewHardwareToolStripMenuItem";
+            this.addNewHardwareToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.addNewHardwareToolStripMenuItem.Text = "Add New Hardware";
+            this.addNewHardwareToolStripMenuItem.Click += new System.EventHandler(this.addNewHardwareToolStripMenuItem_Click);
+            // 
+            // addRemoveProgramsToolStripMenuItem
+            // 
+            this.addRemoveProgramsToolStripMenuItem.Name = "addRemoveProgramsToolStripMenuItem";
+            this.addRemoveProgramsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.addRemoveProgramsToolStripMenuItem.Text = "Add/Remove Programs";
+            this.addRemoveProgramsToolStripMenuItem.Click += new System.EventHandler(this.addRemoveProgramsToolStripMenuItem_Click);
+            // 
+            // dateTimeToolStripMenuItem
+            // 
+            this.dateTimeToolStripMenuItem.Name = "dateTimeToolStripMenuItem";
+            this.dateTimeToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.dateTimeToolStripMenuItem.Text = "Date/Time Properties";
+            this.dateTimeToolStripMenuItem.Click += new System.EventHandler(this.dateTimeToolStripMenuItem_Click);
+            // 
+            // pToolStripMenuItem
+            // 
+            this.pToolStripMenuItem.Name = "pToolStripMenuItem";
+            this.pToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.pToolStripMenuItem.Text = "Display Properties";
+            this.pToolStripMenuItem.Click += new System.EventHandler(this.pToolStripMenuItem_Click);
+            // 
+            // fontsFolderToolStripMenuItem
+            // 
+            this.fontsFolderToolStripMenuItem.Name = "fontsFolderToolStripMenuItem";
+            this.fontsFolderToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.fontsFolderToolStripMenuItem.Text = "Fonts Folder";
+            this.fontsFolderToolStripMenuItem.Click += new System.EventHandler(this.fontsFolderToolStripMenuItem_Click);
+            // 
+            // internetPropertiesToolStripMenuItem
+            // 
+            this.internetPropertiesToolStripMenuItem.Name = "internetPropertiesToolStripMenuItem";
+            this.internetPropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.internetPropertiesToolStripMenuItem.Text = "Internet Properties";
+            this.internetPropertiesToolStripMenuItem.Click += new System.EventHandler(this.internetPropertiesToolStripMenuItem_Click);
+            // 
+            // joystickPropertiesToolStripMenuItem
+            // 
+            this.joystickPropertiesToolStripMenuItem.Name = "joystickPropertiesToolStripMenuItem";
+            this.joystickPropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.joystickPropertiesToolStripMenuItem.Text = "Joystick Properties";
+            this.joystickPropertiesToolStripMenuItem.Click += new System.EventHandler(this.joystickPropertiesToolStripMenuItem_Click);
+            // 
+            // modemPropertiesToolStripMenuItem
+            // 
+            this.modemPropertiesToolStripMenuItem.Name = "modemPropertiesToolStripMenuItem";
+            this.modemPropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.modemPropertiesToolStripMenuItem.Text = "Modem Properties";
+            this.modemPropertiesToolStripMenuItem.Click += new System.EventHandler(this.modemPropertiesToolStripMenuItem_Click);
+            // 
+            // mousePropertiesToolStripMenuItem
+            // 
+            this.mousePropertiesToolStripMenuItem.Name = "mousePropertiesToolStripMenuItem";
+            this.mousePropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.mousePropertiesToolStripMenuItem.Text = "Mouse Properties";
+            this.mousePropertiesToolStripMenuItem.Click += new System.EventHandler(this.mousePropertiesToolStripMenuItem_Click);
+            // 
+            // multimediaPropertiesToolStripMenuItem
+            // 
+            this.multimediaPropertiesToolStripMenuItem.Name = "multimediaPropertiesToolStripMenuItem";
+            this.multimediaPropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.multimediaPropertiesToolStripMenuItem.Text = "Multimedia Properties";
+            this.multimediaPropertiesToolStripMenuItem.Click += new System.EventHandler(this.multimediaPropertiesToolStripMenuItem_Click);
+            // 
+            // printersFolderToolStripMenuItem
+            // 
+            this.printersFolderToolStripMenuItem.Name = "printersFolderToolStripMenuItem";
+            this.printersFolderToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.printersFolderToolStripMenuItem.Text = "Printers Folder";
+            this.printersFolderToolStripMenuItem.Click += new System.EventHandler(this.printersFolderToolStripMenuItem_Click);
+            // 
+            // regionalSettingsToolStripMenuItem
+            // 
+            this.regionalSettingsToolStripMenuItem.Name = "regionalSettingsToolStripMenuItem";
+            this.regionalSettingsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.regionalSettingsToolStripMenuItem.Text = "Regional Settings";
+            this.regionalSettingsToolStripMenuItem.Click += new System.EventHandler(this.regionalSettingsToolStripMenuItem_Click);
+            // 
+            // scannersAndCamerasToolStripMenuItem
+            // 
+            this.scannersAndCamerasToolStripMenuItem.Name = "scannersAndCamerasToolStripMenuItem";
+            this.scannersAndCamerasToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.scannersAndCamerasToolStripMenuItem.Text = "Scanners and Cameras";
+            this.scannersAndCamerasToolStripMenuItem.Click += new System.EventHandler(this.scannersAndCamerasToolStripMenuItem_Click);
+            // 
+            // soundPropertiesToolStripMenuItem
+            // 
+            this.soundPropertiesToolStripMenuItem.Name = "soundPropertiesToolStripMenuItem";
+            this.soundPropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.soundPropertiesToolStripMenuItem.Text = "Sound Properties";
+            this.soundPropertiesToolStripMenuItem.Click += new System.EventHandler(this.soundPropertiesToolStripMenuItem_Click);
+            // 
+            // systemPropertiesToolStripMenuItem
+            // 
+            this.systemPropertiesToolStripMenuItem.Name = "systemPropertiesToolStripMenuItem";
+            this.systemPropertiesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.systemPropertiesToolStripMenuItem.Text = "System Properties";
+            this.systemPropertiesToolStripMenuItem.Click += new System.EventHandler(this.systemPropertiesToolStripMenuItem_Click);
             // 
             // bottleopener
             // 
@@ -356,6 +501,22 @@
         private System.Windows.Forms.ToolStripMenuItem controlPanelToolStripMenuItem;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem createGodModeFolderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accessibilityOptionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewHardwareToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addRemoveProgramsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dateTimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fontsFolderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem internetPropertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem joystickPropertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modemPropertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mousePropertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem multimediaPropertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem printersFolderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem regionalSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scannersAndCamerasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soundPropertiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem systemPropertiesToolStripMenuItem;
     }
 }
 
