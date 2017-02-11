@@ -23,7 +23,7 @@ namespace BottleOpener
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("BottleOpener program launcher by Q", "About");
+            MessageBox.Show("BottleOpener program launcher by Jean-Simon Desjardins, available at https://www.github.com/jsgarden/BottleOpener", "About BottleOpener");
         }
 
         private void textboxInstructions_TextChanged(object sender, EventArgs e)
