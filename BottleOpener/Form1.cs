@@ -184,8 +184,88 @@ namespace BottleOpener
             Environment.CurrentDirectory = directoryString; //Set dir to create godmode folder
             Directory.CreateDirectory( "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}" );
 
-            //Tell the user the godmode folder has succesfully been created
+            //Tell the user the godmode folder has been created
             MessageBox.Show( $"A GodMode folder has successfully been created at {directoryString}", "BottleOpener Notification");
+        }
+
+        private void accessibilityOptionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control access.cpl");
+        }
+
+        private void addNewHardwareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control sysdm.cpl add new hardware");
+        }
+
+        private void addRemoveProgramsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control appwiz.cpl");
+        }
+
+        private void dateTimeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control timedate.cpl");
+        }
+
+        private void pToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control desk.cpl");
+        }
+
+        private void fontsFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control fonts");
+        }
+
+        private void internetPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control inetcpl.cpl");
+        }
+
+        private void joystickPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control joy.cpl");
+        }
+
+        private void modemPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control modem.cpl");
+        }
+
+        private void mousePropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control main.cpl");
+        }
+
+        private void multimediaPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control mmsys.cpl");
+        }
+
+        private void printersFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control printers");
+        }
+
+        private void regionalSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control intl.cpl");
+        }
+
+        private void scannersAndCamerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control sticpl.cpl");
+        }
+
+        private void soundPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control mmsys.cpl sounds");
+        }
+
+        private void systemPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/c " + "control sysdm.cpl");
         }
     }
 }
