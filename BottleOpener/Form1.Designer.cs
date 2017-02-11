@@ -53,6 +53,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.controlPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button3 = new System.Windows.Forms.Button();
+            this.createGodModeFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +76,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolstripFile,
             this.telnetToolStripMenuItem,
+            this.controlPanelToolStripMenuItem,
             this.helpToolStripMenuItem,
             this.toolstripAbout});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -123,22 +127,24 @@
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.launchToolStripMenuItem,
-            this.commandPromptToolStripMenuItem});
+            this.commandPromptToolStripMenuItem,
+            this.createGodModeFolderToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // launchToolStripMenuItem
             // 
             this.launchToolStripMenuItem.Name = "launchToolStripMenuItem";
-            this.launchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.launchToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.launchToolStripMenuItem.Text = "Launch Button";
             this.launchToolStripMenuItem.Click += new System.EventHandler(this.launchToolStripMenuItem_Click);
             // 
             // commandPromptToolStripMenuItem
             // 
             this.commandPromptToolStripMenuItem.Name = "commandPromptToolStripMenuItem";
-            this.commandPromptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.commandPromptToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.commandPromptToolStripMenuItem.Text = "Tools";
             this.commandPromptToolStripMenuItem.Click += new System.EventHandler(this.commandPromptToolStripMenuItem_Click);
             // 
@@ -269,11 +275,36 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // controlPanelToolStripMenuItem
+            // 
+            this.controlPanelToolStripMenuItem.Name = "controlPanelToolStripMenuItem";
+            this.controlPanelToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.controlPanelToolStripMenuItem.Text = "Control Panel";
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(324, 258);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(128, 28);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "Create GodMode Folder";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // createGodModeFolderToolStripMenuItem
+            // 
+            this.createGodModeFolderToolStripMenuItem.Name = "createGodModeFolderToolStripMenuItem";
+            this.createGodModeFolderToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.createGodModeFolderToolStripMenuItem.Text = "GodMode Folder";
+            this.createGodModeFolderToolStripMenuItem.Click += new System.EventHandler(this.createGodModeFolderToolStripMenuItem_Click);
+            // 
             // bottleopener
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(701, 299);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button1);
@@ -322,6 +353,9 @@
         private System.Windows.Forms.ToolStripMenuItem telnetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem enableTelnetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem disableTelnetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controlPanelToolStripMenuItem;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolStripMenuItem createGodModeFolderToolStripMenuItem;
     }
 }
 

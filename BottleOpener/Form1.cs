@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +47,9 @@ namespace BottleOpener
             startProgram();
         }
 
+        /// <summary>
+        /// Use this to start an executable from the directory textbox
+        /// </summary>
         private void startProgram()
         {
             Process.Start(directoryString);
@@ -159,6 +163,29 @@ namespace BottleOpener
         private void button6_Click(object sender, EventArgs e)
         {
             Process.Start("control main.cpl keyboard");
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createGodModeFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This will create a GodMode folder at the location specified in the directory text box.", "Help - GodMode Folder");
+        }
+
+        
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            directoryString = textboxDirectory.Text;
+
+            Environment.CurrentDirectory = directoryString; //Set dir to create godmode folder
+            Directory.CreateDirectory( "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}" );
+
+            //Tell the user the godmode folder has succesfully been created
+            MessageBox.Show( $"A GodMode folder has successfully been created at {directoryString}", "BottleOpener Notification");
         }
     }
 }
