@@ -69,7 +69,7 @@ namespace BottleOpener
 
         private void errorNoDirectory()
         {
-            MessageBox.Show("Please enter a valid directory or command in the text box !", "ERROR");
+            MessageBox.Show("Please enter a valid directory or command in the text field !", "ERROR");
         }
 
         private void textboxDirectory_KeyPress(object sender, KeyPressEventArgs e)
