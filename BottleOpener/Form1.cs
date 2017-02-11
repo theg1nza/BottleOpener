@@ -44,7 +44,7 @@ namespace BottleOpener
         private void launchbutton_Click(object sender, EventArgs e)
         {
             directoryString = textboxDirectory.Text;
-            startProgram();
+            checkLength();
         }
 
         /// <summary>
@@ -53,6 +53,23 @@ namespace BottleOpener
         private void startProgram()
         {
             Process.Start(directoryString);
+        }
+
+        private void checkLength()
+        {
+            if (directoryString.Length > 0)
+            {
+                startProgram();
+            }
+            else
+            {
+                errorNoDirectory();
+            }
+        }
+
+        private void errorNoDirectory()
+        {
+            MessageBox.Show("Please enter a valid directory or command in the text box !", "ERROR");
         }
 
         private void textboxDirectory_KeyPress(object sender, KeyPressEventArgs e)
@@ -181,11 +198,20 @@ namespace BottleOpener
         {
             directoryString = textboxDirectory.Text;
 
-            Environment.CurrentDirectory = directoryString; //Set dir to create godmode folder
-            Directory.CreateDirectory( "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}" );
+            if (directoryString.Length > 0)
+            {
+                Environment.CurrentDirectory = directoryString; //Set dir to create godmode folder
+                Directory.CreateDirectory( "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}" );
 
-            //Tell the user the godmode folder has been created
-            MessageBox.Show( $"A GodMode folder has successfully been created at {directoryString}", "BottleOpener Notification");
+                //Tell the user the godmode folder has been created
+                MessageBox.Show( $"A GodMode folder has successfully been created at {directoryString}", "BottleOpener Notification");
+            }
+            else
+            {
+                errorNoDirectory();
+            }
+
+           
         }
 
         private void accessibilityOptionsToolStripMenuItem_Click(object sender, EventArgs e)

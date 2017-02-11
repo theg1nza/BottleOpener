@@ -34,9 +34,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolstripFile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolstripExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.telnetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enableTelnetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.disableTelnetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.launchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.commandPromptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,7 +88,6 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolstripFile,
-            this.telnetToolStripMenuItem,
             this.controlPanelToolStripMenuItem,
             this.helpToolStripMenuItem,
             this.toolstripAbout});
@@ -112,32 +108,9 @@
             // toolstripExit
             // 
             this.toolstripExit.Name = "toolstripExit";
-            this.toolstripExit.Size = new System.Drawing.Size(92, 22);
+            this.toolstripExit.Size = new System.Drawing.Size(152, 22);
             this.toolstripExit.Text = "Exit";
             this.toolstripExit.Click += new System.EventHandler(this.toolstripExit_Click);
-            // 
-            // telnetToolStripMenuItem
-            // 
-            this.telnetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.enableTelnetToolStripMenuItem,
-            this.disableTelnetToolStripMenuItem});
-            this.telnetToolStripMenuItem.Name = "telnetToolStripMenuItem";
-            this.telnetToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.telnetToolStripMenuItem.Text = "Telnet";
-            // 
-            // enableTelnetToolStripMenuItem
-            // 
-            this.enableTelnetToolStripMenuItem.Name = "enableTelnetToolStripMenuItem";
-            this.enableTelnetToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.enableTelnetToolStripMenuItem.Text = "Enable Telnet";
-            this.enableTelnetToolStripMenuItem.Click += new System.EventHandler(this.enableTelnetToolStripMenuItem_Click);
-            // 
-            // disableTelnetToolStripMenuItem
-            // 
-            this.disableTelnetToolStripMenuItem.Name = "disableTelnetToolStripMenuItem";
-            this.disableTelnetToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.disableTelnetToolStripMenuItem.Text = "Disable Telnet";
-            this.disableTelnetToolStripMenuItem.Click += new System.EventHandler(this.disableTelnetToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -495,9 +468,6 @@
         private System.Windows.Forms.ToolStripMenuItem commandPromptToolStripMenuItem;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ToolStripMenuItem telnetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem enableTelnetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem disableTelnetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem controlPanelToolStripMenuItem;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem createGodModeFolderToolStripMenuItem;
